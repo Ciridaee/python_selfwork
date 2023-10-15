@@ -1,9 +1,10 @@
 type=input("File name: ")
+type=type.lower()
 
 if type.find(".gif")>-1:
     print("image/gif")
 elif type.find(".jpg")>-1:
-    print("image/jpg")
+    print("image/jpeg")
 elif type.find(".jpeg")>-1:
     print("image/jpeg")
 elif type.find(".png")>-1:
