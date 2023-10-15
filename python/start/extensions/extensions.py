@@ -3,9 +3,7 @@ type=type.lower()
 
 if type.find(".gif")>-1:
     print("image/gif")
-elif type.find(".jpg")>-1:
-    print("image/jpeg")
-elif type.find(".jpeg")>-1:
+elif type.find(".jp")>-1:
     print("image/jpeg")
 elif type.find(".png")>-1:
     print("image/png")
