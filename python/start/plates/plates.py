@@ -8,16 +8,24 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    if len(plate)>1 and len(plate)<=6:
-        if plate[0:2].isalpha():
-            for i in range(len(plate)):
-                if plate[i].isalpha()==False:
-                        if plate[i]!=0:
+    if 6>=len(s)>=2:
+            
+            if s.isalpha():
+                return True
+            
+            elif s[0:2].isalpha() and s.isalnum():
+                #isalnum alfabetik karakter olup olmadigini denetler
+
+                for char in s:
+
+                    if char.isdigit():
+
+                        ind=s.index(char)
+
+                        if s[ind:].isdigit() and int(char)!=0:
                             return True
                         else:
                             return False
-        else:
-            return False
     else:
         return False
     
