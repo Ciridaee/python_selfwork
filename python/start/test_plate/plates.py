@@ -1,4 +1,3 @@
-
 def main():
     plate = input("Plate: ")
     if is_valid(plate):
@@ -30,4 +29,5 @@ def is_valid(s):
     
 
 
-main()
+if __name__ == "__main__":
+    main()

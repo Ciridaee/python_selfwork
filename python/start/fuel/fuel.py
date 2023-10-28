@@ -1,4 +1,12 @@
+def main():
+    num3=int(round(control(),0))
 
+    if num3>98:
+        print("F")
+    elif num3<2:
+        print("E")
+    else:
+        print(f"{num3}%")
     
 
 
@@ -17,12 +25,5 @@ def control():
             pass
 
 
-
-num3=int(round(control(),0))
-
-if num3>98:
-    print("F")
-elif num3<2:
-    print("E")
-else:
-    print(f"{num3}%")
+if __name__ == "__main__":
+    main()

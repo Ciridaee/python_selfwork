@@ -1,5 +1,11 @@
 sentence=input("Input: ")
-letters=["a","e","i","o","u","A","E","I","O","U"]
-for a in letters:
-    sentence=sentence.replace(a,"")
+
+def shorten(a):
+    b=a
+    letters=["a","e","i","o","u","A","E","I","O","U"]
+    for i in letters:
+        b=b.replace(i,"")
+    return b
+    
+sentence=shorten(sentence)
 print(f"Output: {sentence}")
