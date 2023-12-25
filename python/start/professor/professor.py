@@ -49,12 +49,6 @@ def questions(level,count):
                 count=count+1
                 break
             
-            cond=control(usr,num1,num2,num3,i)
-            if cond==False:
-                break
-            else:
-                count=count+1
-                break
     print(f"Score: {count}")
     sys.exit(0)
 

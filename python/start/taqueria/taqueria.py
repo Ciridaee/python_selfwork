@@ -4,7 +4,7 @@ menu={
     "Bowl": 8.50,
     "Nachos": 11.00,
     "Quesadilla": 8.50,
-    "Super Burrito": 8.50,
+    "Super Burrito": 8.75,
     "Super Quesadilla": 9.50,
     "Taco": 3.00,
     "Tortilla Salad": 8.00

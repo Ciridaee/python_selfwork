@@ -5,7 +5,11 @@ after=[]
 
 if sys.argv[1][-3:]!="csv" or sys.argv[2][-3:]!="csv":
     sys.exit("Not a CSV file")
-elif len(sys.argv)==3:
+elif len(sys.argv)>3:
+    sys.exit("Too many command-line arguments")
+elif len(sys.argv)<3:
+    sys.exit("Too few command-line arguments")
+else:
         try:
             with open(sys.argv[1]) as file:
                 lines = csv.DictReader(file)
@@ -19,7 +23,3 @@ elif len(sys.argv)==3:
                     writer.writerow({"first":row["first"],"last":row["last"],"house":row["house"]})
         except FileNotFoundError:
             sys.exit("File does not exist")
-elif len(sys.argv)>3:
-    sys.exit("Too many command-line arguments")
-elif len(sys.argv)<3:
-    sys.exit("Too few command-line arguments")
